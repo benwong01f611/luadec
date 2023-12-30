@@ -7,11 +7,11 @@ It is based on Hisham Muhammad's luadec which targeted lua 5.0.x and LuaDec51 by
 
 LuaDec is free software and uses the same license as the original LuaDec.
 
-This repo is edited by [benwong01f611](https://github.com/benwong01f611/luadec) for Lua 5.3 32-bit support only.
+This repo is edited by [benwong01f611](https://github.com/benwong01f611/luadec) for Lua 5.3 32-bit support only. Lua 5.1 and 5.2 are untested.
 
 Compiling
 ---------
-```
+```sh
 git clone https://github.com/viruscamp/luadec
 cd luadec/lua-5.3
 make linux # or mingw for Windows build
@@ -19,7 +19,7 @@ cd ../luadec
 make LUAVER=5.3
 ```
 
-If you want to build it for lua 5.1 or 5.2 , just replace 5.3 above to 5.1 or 5.2, and run ``git submodule --init lua-5.x``. Add ``-m32`` to CFLAGS and LDFLAGS in the Makefile of lua-5.x and luadec for 32-bit support.
+If you want to build it for lua 5.1 or 5.2 , just replace 5.3 above to 5.1 or 5.2.
 
 There are also project files for vc2008, tested for vc2008 and vc2013.  
 Before compiling, make sure there are correct sources in lua-5.1 , lua-5.2 or lua-5.3.
